@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color: #ffe66d;
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #ffffffcc;
+  }
+  
+  .hero-content {
+    max-width: 1200px;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-text {
+    max-width: 500px;
+  }
+  
+  .hero-text h2 {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff6b6b;
+  }
+  
+  .about-section {
+    padding: 2rem;
+    background-color: #f6f9fc;
+  }
+  
+  .about-section h3 {
+    font-size: 1.8rem;
+    color: #2ec4b6;
+    margin-bottom: 1rem;
+  }
+  
+  .about-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  
+  .about-section th,
+  .about-section td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  .info-columns {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .info-columns h4 {
+    color: #2ec4b6;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info-columns ul {
+    padding-left: 1rem;
+  }
+  
+  .contact-section {
+    padding: 2rem;
+    background-color: #ffffffcc;
+  }
+  
+  .contact-section h3 {
+    font-size: 1.8rem;
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  .contact-details p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .contact-details a {
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-content, .contact-content, .info-columns {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-image img {
+      width: 200px;
+      height: 200px;
+    }
+  }
