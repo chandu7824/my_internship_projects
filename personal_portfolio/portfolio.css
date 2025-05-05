@@ -6,13 +6,13 @@
   
   body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    background: #F5EEDD;
     color: #333;
     line-height: 1.6;
   }
   
   .navbar {
-    background-color: #ff6b6b;
+    background-color: #A6D6D6;
     color: white;
     padding: 1rem 2rem;
     display: flex;
@@ -42,7 +42,7 @@
   
   .navbar a:hover,
   .navbar a.active {
-    color: #ffe66d;
+    color: #000000;
   }
   
   .hero-section {
@@ -69,7 +69,7 @@
   
   .hero-text h2 {
     font-size: 2.5rem;
-    color: #ff6b6b;
+    color: #102E50;
   }
   
   .hero-text p {
@@ -124,6 +124,34 @@
     padding-left: 1rem;
   }
   
+  .project-section{
+    height: 350px;
+    color: #000000;
+  }
+
+  .project-section h4{
+    font-size: 40px;
+    margin-left: 10px;
+  }
+
+  .project-section ul li{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .project-section ul a{
+    animation: pulse 1.5s infinite;
+    color: #60B5FF;
+    margin-left: 20px;
+  }
+
+  @keyframes pulse{
+    0% { text-shadow: 0 0 5px #C68EFD, 0 0 10px #C68EFD; }
+    50% { text-shadow: 0 0 15px #E9A5F1, 0 0 20px #E9A5F1; }
+    100% { text-shadow: 0 0 5px #C68EFD, 0 0 10px #C68EFD; }
+  }
+
   .contact-section {
     padding: 2rem;
     background-color: #ffffffcc;
@@ -131,7 +159,7 @@
   
   .contact-section h3 {
     font-size: 1.8rem;
-    color: #ff6b6b;
+    color: #2ec4b6;
     margin-bottom: 1rem;
   }
   
@@ -143,13 +171,20 @@
   }
   
   .contact-details p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0.5rem 0;
+    color: #000000;
   }
   
   .contact-details a {
-    color: #333;
-    text-decoration: underline;
+    animation: blink 1s infinite;
+    color: #2ec4b6;
+  }
+
+  @keyframes blink{
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
   }
   
   .map iframe {
